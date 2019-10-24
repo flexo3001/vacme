@@ -185,7 +185,7 @@ hi! link SignColumn LineNr
 exe "hi! DiffAdd"     ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:G1    ." ctermbg=".s:GC1
 exe "hi! DiffChange"  ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:B1    ." ctermbg=".s:BC1
 exe "hi! DiffDelete"  ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:R1    ." ctermbg=".s:RC1
-exe "hi! DiffText"    ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:W1    ." ctermbg=".s:WC1
+exe "hi! DiffText"    ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:Y1    ." ctermbg=".s:YC1
 
 exe "hi! ErrorMsg"       ." cterm=bold" ." gui=bold"
 exe "hi! ModeMsg"        ." cterm=bold" ." gui=bold"
