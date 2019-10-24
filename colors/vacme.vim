@@ -24,7 +24,7 @@ let g:colors_name = "vacme"
     let s:W1  = '#FFFFEC'
     let s:W2  = '#EEEEA7'
     let s:W3  = '#999957'
-    let s:W4  = '#424242'
+    let s:W4  = '#000000'
     let s:WC1 = '15'
     let s:WC2 = '08'
     let s:WC3 = '07'
@@ -149,9 +149,9 @@ hi!  MatchParen    term=NONE  cterm=NONE  ctermfg=NONE  ctermbg=NONE  gui=NONE  
 exe "hi! Normal"        ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:W1    ." ctermbg=".s:WC1
 exe "hi! Visual"        ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:W2    ." ctermbg=".s:WC2
 exe "hi! NonText"       ." guifg=".s:W3    ." ctermfg=".s:WC3
-exe "hi! StatusLine"    ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:C1    ." ctermbg=".s:CC1    ." cterm=bold,underline"    ." gui=bold,underline"
+exe "hi! StatusLine"    ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:C1    ." ctermbg=".s:CC1
 exe "hi! StatusLineNC"  ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:C1    ." ctermbg=".s:CC1
-exe "hi! LineNr"        ." guifg=".s:W3    ." ctermfg=".s:WC3    ." guibg=".s:Y1    ." ctermbg=".s:WC1
+exe "hi! LineNr"        ." guifg=".s:W3    ." ctermfg=".s:WC3    ." guibg=".s:W1    ." ctermbg=".s:WC1
 exe "hi! CursorLineNr"  ." guifg=".s:W1    ." ctermfg=".s:WC1    ." guibg=".s:M3    ." ctermbg=".s:MC3
 exe "hi! VertSplit"     ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:C1    ." ctermbg=".s:CC1
 exe "hi! Folded"        ." guifg=".s:Y3    ." ctermfg=".s:YC3
@@ -182,10 +182,10 @@ hi! link SignColumn LineNr
 " Conceal
 " EndOfBuffer
 
-" DiffAdd
-" DiffChange
-" DiffDelete
-" DiffText
+exe "hi! DiffAdd"     ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:G1    ." ctermbg=".s:GC1
+exe "hi! DiffChange"  ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:B1    ." ctermbg=".s:BC1
+exe "hi! DiffDelete"  ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:R1    ." ctermbg=".s:RC1
+exe "hi! DiffText"    ." guifg=".s:W4    ." ctermfg=".s:WC4    ." guibg=".s:W1    ." ctermbg=".s:WC1
 
 exe "hi! ErrorMsg"       ." cterm=bold"
 exe "hi! ModeMsg"        ." cterm=bold"
@@ -215,7 +215,7 @@ exe "hi! Ignore"      ." cterm=bold"
 exe "hi! Error"       ." guifg=".s:W1  ." ctermfg=".s:WC1  ." guibg=".s:R3  ." ctermbg=".s:RC3
 exe "hi! Todo"        ." cterm=bold"
 
-exe "hi! Special"     ." cterm=italic"
+" exe "hi! Special"     ." cterm=italic"
 exe "hi! MatchParen"  ." cterm=bold"
 exe "hi! SpecialKey"  ." cterm=bold"
 exe "hi! Ignore"      ." cterm=bold"
